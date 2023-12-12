@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --MidnightBlue: #003B6D;
+    --BlueSky: #6699CC;
+    --DimGray: #676767;
+    --Silver: #BDBDBD;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+/*header style*/
+header {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    margin: auto;
+}
+
+header div {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoImg {
+    height: 80px;
+}
+
+.hero {
+    max-width: 1440px;
+    margin: 6rem auto 15rem auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10rem;
+}
+
+.heroBtn {
+    background-color: var(--BlueSky);
+    color: #fff;
+    border: 1px solid var(--MidnightBlue);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.heroBtn:hover {
+    cursor: pointer;
+    background-color: var(--MidnightBlue);
+}
+
+.hero p {
+    font-size: 1.125rem;
+}
+
+.hero img {
+    margin-top: 2rem;
+}
+
+.heroLeftPane {
+    width: 50%;
+}
+
+.heroRightPane {
+    width: 50%;
+}
+
+/*Navigation*/
+nav {
+    position: sticky;
+    top: 0.75rem;
+    width: 100%;
+    margin: 7rem 0 2rem 0;
+    padding: 2px 0;
+    background-color: var(--Silver);
+}
+
+nav ul {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    height: 1.75rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.navLink {
+    color: var(--MidnightBlue);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--MidnightBlue),0;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.navLink:hover, .active {
+    background-color: var(--BlueSky);
+    color: #fff;
+}
+
+svg {
+    fill: var(--BlueSky);
+    transition: fill 0.3s ease;
+}
+
+.navLink:hover svg, .active svg {
+    fill: var(--MidnightBlue);
+}
+
+/*Main styles*/
+
+a {
+    color: var(--BlueSky);
+    height: fit-content;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: #003B6D;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--MidnightBlue);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.image {
+    border-radius: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 5rem auto 1rem auto;
+}
+
+footer ul {
+    display: flex;
+    column-gap: 2rem;
+}
+
+footer li {
+    list-style: none;
+}

@@ -1,0 +1,62 @@
+.contactForm {
+    background-color: var(--DimGray);
+    color: #fff;
+    font-size: 1.125rem;
+    margin: 5rem auto 0 auto;
+}
+
+.contactItem {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10rem;
+    font-weight: 300;
+}
+
+.contactLeftPane {
+    width: 50%;
+    margin: auto;
+}
+
+.contactRightPane {
+    background-color: var(--MidnightBlue);
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.contactRightPane form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 650px;
+    text-align: left;
+}
+
+.contactRightPane input, .contactRightPane select, .formSubmit {
+    margin: 1rem 0;
+    border: 2px solid var(--BlueSky);
+    background-color: var(--MidnightBlue);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.formLeftPane, .formRightPane {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.125rem;
+}
+
+.formSubmit {
+    width: 90%;
+    cursor: pointer;
+}
+
+.formSubmit:hover {
+    background-color: var(--BlueSky);
+}
